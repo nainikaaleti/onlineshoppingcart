@@ -1,0 +1,14 @@
+<html>
+<head>
+<script typw="text/javascript">
+function fu(){
+document.getElementById("t1").innerHTML="agvnkjdsnkljdsnglr";
+}
+</script>
+</head>
+<body>
+<input type="button" value="save" onclick="fu()">
+<div id="t1">
+</div>
+</body>
+</html>

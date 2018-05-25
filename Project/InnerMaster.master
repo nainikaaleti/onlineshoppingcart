@@ -1,0 +1,204 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="InnerMaster.master.cs" Inherits="InnerMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+
+<meta http-equiv=Content-Type content="text/html;  charset=ISO-8859-1">
+<TITLE>EASY BOOK SHOPPING AND ONLINE LIBRARY</TITLE>
+
+<link rel="stylesheet" href="style.css" type="text/css">
+
+<style>
+	
+A 		{ color: #C0C0C0; font-weight:normal; text-decoration: none; }		
+A:link		{ color: #C0C0C0; font-weight:normal; text-decoration: none; }
+A:visited		{ color: #C0C0C0; font-weight:normal; text-decoration: none; }	
+A:active		{ color: #358391; font-weight:normal; text-decoration: none;  }	
+A:hover		{ color: #358391; font-weight:normal; text-decoration: none;  }
+
+body, td, tr{		
+font-family: Arial;		
+color:#FFFFFF;		
+font-size:11;		
+font-weight:normal;
+}
+
+
+    .style1
+    {
+    }
+    .style1
+    {
+    }
+    .style2
+    {
+        width: 100%;
+    }
+    .style3
+    {
+        width: 231px;
+    }
+</style>
+
+<script language="JavaScript" type="text/JavaScript" src="java/javascript.js"></script>
+<SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript" SRC="java/base.js"></SCRIPT>
+<script language="JavaScript" src="java/tabel.js" type="text/javascript"></script>
+
+
+</HEAD>
+<BODY background="img/bg.gif" bgcolor="#202020" topmargin="0" leftmargin="0">
+
+    <form id="form1" runat="server">
+
+<center>
+<table bgcolor="#202020" width="776" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="3" bgcolor="#FFFFFF"></td>
+<td width="770" valign="top">
+ 
+    <table bgcolor="#202020" width="770" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+    <td height="32" align="right" valign="middle" class="style3">&nbsp;</td> 
+    <td height="32" align="right" valign="middle">&nbsp;</td> 
+    </tr>
+
+    <tr>
+    <td height="132" align="left" valign="middle" background="img/headerback.jpg" 
+            class="style3">
+        <img alt="booksimage" src="pic/books.jpg"  
+            style="width: 232px; height: 133px;" /></td> 
+    <td height="132" align="left" valign="middle" background="img/headerback.jpg">&nbsp;<font size=5>&nbsp;&nbsp;&nbsp;&nbsp; Easy book shopping and online Library 
+         </font><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Temple for Books</td> 
+    </tr>
+    <tr>
+    <td height="32" align="left" valign="middle" background="img/bluebg.gif" 
+            class="style1" colspan="2">&nbsp;<asp:HyperLink ID="hyphome" runat="server" Text="Home" NavigateUrl="~/ShopKeeperHome.aspx"></asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"> About Us </a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Logout</asp:HyperLink>
+        </td> 
+    </tr>
+
+    </table>
+ 
+    <table bgcolor="#464646" width="770" height="350" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+    <td width="222" bgcolor="#202020" align="left" valign="top">
+    
+        <table border="0" cellspacing="0" cellpadding="0" bgcolor="#202020" 
+            style="height: 221px; width: 212px;">
+        <tr>
+        <td height="24" width="222" valign=middle>&nbsp; <b>ShopKeeper Home:</b></td>
+        </tr>
+
+        <tr>
+        <td height="24" width="222" valign=middle onMouseOver="javascript:taust(this,'#0F363F')" onMouseOut="javascript:taust(this,'#202020')">
+            &nbsp; » <asp:HyperLink ID="addcategory" runat="server" NavigateUrl="~/UpdateShopKeeper.aspx">Update Profile</asp:HyperLink></td>
+        </tr>
+        <tr>
+        <td height="24" width="222" valign=middle onMouseOver="javascript:taust(this,'#0F363F')" onMouseOut="javascript:taust(this,'#202020')">
+            &nbsp; » <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/AddCategory.aspx">Add 
+            Category</asp:HyperLink></td>
+        </tr>
+        <tr>
+        <td height="24" width="222" valign=middle onMouseOver="javascript:taust(this,'#0F363F')" onMouseOut="javascript:taust(this,'#202020')">
+            &nbsp; » <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/AddSubCat.aspx">Add 
+            Sub Category</asp:HyperLink></td>
+        </tr>
+        <tr>
+        <td height="24" width="222" valign=middle onMouseOver="javascript:taust(this,'#0F363F')" onMouseOut="javascript:taust(this,'#202020')">
+            &nbsp; » <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/ViewCategory.aspx">View Category</asp:HyperLink></td>
+        </tr>
+        <tr>
+        <td height="24" width="222" valign=middle onMouseOver="javascript:taust(this,'#0F363F')" onMouseOut="javascript:taust(this,'#202020')">
+            &nbsp; » <asp:HyperLink ID="addbook" runat="server" NavigateUrl="~/AddBook.aspx">Add Book</asp:HyperLink></td>
+        </tr>
+        <tr>
+        <td height="24" width="222" valign=middle onMouseOver="javascript:taust(this,'#0F363F')" onMouseOut="javascript:taust(this,'#202020')">
+            &nbsp; » <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/ViewBooks.aspx">View Books</asp:HyperLink></td>
+        </tr>
+        <tr> <td height="24" width="222" valign=middle  onMouseOver="javascript:taust(this,'#0F363F')" onMouseOut="javascript:taust(this,'#202020')">
+        
+           &nbsp; » <asp:HyperLink ID="HyperLink5" runat="server" 
+                NavigateUrl="~/ViewSubCat.aspx">View Sub Category</asp:HyperLink></td></tr>
+     
+     <tr> <td height="24" width="222" valign=middle  onMouseOver="javascript:taust(this,'#0F363F')" onMouseOut="javascript:taust(this,'#202020')">
+        
+           &nbsp; » <asp:HyperLink ID="Hy1" runat="server" NavigateUrl="~/ViewQuery.aspx"> View Query</asp:HyperLink></td></tr>
+     
+      </table>
+    </td>
+    <td width="3" bgcolor="#FFFFFF" align="right" valign="top"></td>
+    <td width="10" align="left" valign="top"><img src="img/shadow1.gif" border="0" width="10" height="32"></td> 
+    <td width="525" align="left" valign="top"><img src="img/shadow1.gif"  border="0" width="525" height="32"><br>
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p style="height: 259px">
+            <br />
+                <table class="style2">
+                    </table>
+                <table align="center" class="style2">
+                    <tr>
+                        <td>
+                        
+                            &nbsp;</td>
+                    </tr>
+                </table>
+        </p>
+        
+        </asp:ContentPlaceHolder>
+    </td>
+       <td width="10" align="left" valign="top">
+           <br />
+           <br />
+           <br />
+           <br />
+           <br />
+           <img src="img/shadow1.gif" border="0" width="10" height="32"></td> 
+       
+    </tr>
+    </table> 
+ 
+    <table bgcolor="#464646" width="770" height="32" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+    <td width="222" bgcolor="#202020" align="left" valign="top"></td>
+    <td width="3" bgcolor="#FFFFFF" align="right" valign="top"></td>
+    <td width="10" align="left" valign="top"><img src="img/shadow2.gif" border="0" width="10" height="32"></td> 
+    <td width="525" align="left" valign="top"><img src="img/shadow2.gif" border="0" width="525" height="32"></td>  
+    <td width="10" align="left" valign="top"><img src="img/shadow2.gif" border="0" width="10" height="32"></td> 
+    </tr>
+
+    </table>
+ 
+    <table bgcolor="#202020" width="770" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+    <td height="32" width="30" align="left" valign="middle" background="img/bluebg.gif">
+        &nbsp;</td>
+    <td height="32" width="740" align="right" valign="middle" background="img/bluebg.gif">
+       &nbsp; 
+      
+
+</td>
+
+<td width="3" bgcolor="#FFFFFF"></td>
+</tr>
+</table>
+</center>
+
+
+    </form>
+
+
+</body>
+</HTML>
+
+
+
+
+
+
+
+
